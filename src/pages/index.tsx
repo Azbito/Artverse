@@ -1,12 +1,10 @@
-import { useContext, useEffect, useState } from 'react';
+import { useContext } from 'react';
 import LightMode from '@/components/LightMode';
 import NightMode from '@/components/NightMode';
-import NavBar from '@/components/NavBar';
 import { LightContext } from '@/contexts/lightContext';
 
 export default function Home() {
-  const { isLight, setIsLight } = useContext(LightContext)
-
+  const { isLight } = useContext(LightContext)
 
   return (
     <>

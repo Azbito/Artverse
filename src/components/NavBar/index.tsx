@@ -10,7 +10,7 @@ export default function NavBar() {
   const { isLight } = useContext(LightContext)
 
   return (
-    <div className={isLight ? "bg-blue-500 h-sm w-full justify-center items-center flex fixed top-0" : "bg-zinc-800 h-sm justify-center items-center flex fixed w-full top-0 z-5"}>
+    <div className={isLight ? "bg-blue-500 h-sm w-full justify-center items-center flex fixed top-0 z-10 shadow-lg" : "bg-zinc-800 h-sm justify-center items-center flex fixed w-full top-0 z-10 shadow-lg"}>
       {isLight ?
         <DarkModeIcon className="text-yellow-400 absolute right-8 cursor-pointer" onClick={renderNight} />
         :
