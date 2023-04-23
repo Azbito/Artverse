@@ -1,10 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './src/pages/**/*.{js,ts,jsx,tsx}',
-    './src/components/**/*.{js,ts,jsx,tsx}',
-    './src/app/**/*.{js,ts,jsx,tsx}'
-  ],
+  content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
       backgroundImage: {
@@ -15,11 +11,16 @@ module.exports = {
     },
     fontFamily: {
       kristi: ['Kristi', 'Poppins', 'sans'],
-      julius: ['Julius Sans One', 'Poppins', 'sans']
+      julius: ['Julius Sans One', 'Poppins', 'sans'],
+      poppins: ['Poppins', 'sans']
     },
     fontSize: {
       xl: '5rem',
       base: '1.5rem'
+    },
+    height: {
+      sm: '3rem',
+      xl: '20rem'
     }
   },
   plugins: []
