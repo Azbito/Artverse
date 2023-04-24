@@ -4,6 +4,7 @@ import Cards from '../Cards';
 import Offer from '../Offer';
 import ArtCategories from '../ArtCategories';
 import Motivation from '../Motivation';
+import Footer from '../Footer';
 
 export default function LightMode() {
 
@@ -19,9 +20,9 @@ export default function LightMode() {
       <Cards />
       <Offer />
       <ArtCategories />
-      {/* Work in progress 
+
       <Motivation />
-      */}
+      <Footer />
     </div>
   )
 }

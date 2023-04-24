@@ -2,7 +2,7 @@ import { LightContext } from '@/contexts/lightContext';
 import useLight from '@/hooks/useLight';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
-import { useContext, useEffect } from 'react';
+import { useContext } from 'react';
 
 
 export default function NavBar() {
@@ -10,7 +10,8 @@ export default function NavBar() {
   const { isLight } = useContext(LightContext)
 
   return (
-    <div className={isLight ? "bg-blue-500 h-sm w-full justify-center items-center flex fixed top-0 z-10 shadow-lg" : "bg-zinc-800 h-sm justify-center items-center flex fixed w-full top-0 z-10 shadow-lg"}>
+    <div className={isLight ? "bg-blue-500 h-sm w-full justify-between items-center flex fixed top-0 z-10 shadow-lg" : "dark:bg-zinc-800 h-sm justify-between items-center flex fixed w-full top-0 z-10 shadow-lg"}>
+      <strong className="dark:text-white text-white font-kristi text-[2rem] ml-5 cursor-pointer" onClick={() => alert("This project was made to understand local storage. There's no more pages.")}>Artverse</strong>
       {isLight ?
         <DarkModeIcon className="text-yellow-400 absolute right-8 cursor-pointer" onClick={renderNight} />
         :
