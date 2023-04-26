@@ -9,7 +9,7 @@ import Footer from '../Footer';
 export default function LightMode() {
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col items-center justify-center">
       <div className="mt-32 flex items-center justify-around flex-row">
         <Image src={MountainMorning} alt="Starry Night" className="rounded-lg w-1/2 h-full" width={500} />
         <div className='w-1/3'>
@@ -20,7 +20,6 @@ export default function LightMode() {
       <Cards />
       <Offer />
       <ArtCategories />
-
       <Motivation />
       <Footer />
     </div>

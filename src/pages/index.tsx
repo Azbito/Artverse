@@ -8,7 +8,7 @@ export default function Home() {
 
   return (
     <>
-      <div className={isLight ? "bg-white h-full" : "dark:bg-slate-800 h-full"}>
+      <div className={isLight ? "bg-white h-full" : "dark:bg-slate-800 h-screen w-full"}>
         {isLight ?
           <LightMode />
           :

@@ -9,19 +9,19 @@ export default function Motivation() {
   const { isLight } = useContext(LightContext)
 
   return (
-    <div className="flex justify-center items-center gap-[5rem] mt-[3rem]">
-      <div className="flex-col items-center justify-end flex w-[23rem] gap-6">
-        <h1 className={isLight ? "font-poppins font-bold text-blue-500 text-lg text-end" : "font-poppins font-bold dark:text-white text-lg text-end"}>Don't you ever give up!</h1>
-        <p className={isLight ? "font-poppins text-black text-base text-end" : "font-poppins dark:text-white text-base text-end"}>Art is our medicine. That's why we always feel better when we admire them. Stay safe.</p>
-        <div className="ml-[16rem]">
+    <div className="flex justify-center items-center gap-[5rem] mt-[3rem] 2xl:gap-[5rem]">
+      <div className="flex-col items-center justify-end flex w-[23rem] gap-6 2xl:w-[35rem]">
+        <h1 className={isLight ? "font-poppins font-bold text-blue-500 text-lg text-end 2xl:text-[3rem] lg:text-[2rem]" : "font-poppins font-bold dark:text-white text-lg text-end 2xl:text-[3rem] lg:text-[2rem]"}>Don't you ever give up!</h1>
+        <p className={isLight ? "font-poppins text-black text-base text-end 2xl:text-[1.5rem] lg:text-[1rem]" : "font-poppins dark:text-white text-base text-end 2xl:text-[1.5rem] lg:text-[1rem]"}>Art is our medicine. That's why we always feel better when we admire them. Stay safe.</p>
+        <div className="ml-[16rem] 2xl:ml-[14rem]">
           <Button onClick={() => alert("Work in progress!")} title="See our tips" />
         </div>
       </div>
-      {isLight ?
+      {/* {isLight ?
         <Image src={Sky} alt="Sky" width={500} className="rounded-lg" />
         :
         <Image src={GirlInTheForest} alt="Girl In The Forest" width={500} className="rounded-lg" />
-      }
+      } */}
     </div>
   )
 }
