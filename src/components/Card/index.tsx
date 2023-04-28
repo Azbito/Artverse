@@ -14,7 +14,7 @@ export default function Card({ img, alt, title, description, onClick }: CardProp
   const { isLight } = useContext(LightContext)
 
   return (
-    <div className={isLight ? "bg-blue-500 flex justify-center items-center gap-5 p-4 flex-col rounded-xl cursor-pointer duration-200 hover:bg-blue-400 active:bg-blue-600 xl:h-[25rem] xl:w-[25rem] 2xl:h-[40rem] 2xl:w-[30rem] 2xl:gap-10 lg:w-[20rem] lg:h-[25rem] md:h-[20rem] md:w-[20rem]"
+    <div className={isLight ? "bg-blue-500 flex justify-center items-center gap-5 p-4 flex-col rounded-xl cursor-pointer duration-200 hover:bg-blue-400 active:bg-blue-600 xl:h-[25rem] xl:w-[25rem] 2xl:h-[40rem] 2xl:w-[30rem] 2xl:gap-10 lg:w-[20rem] lg:h-[25rem] md:h-[20rem] md:w-[20rem] sm:w-[25rem] sm:p-16"
       :
       "dark:bg-zinc-800 flex justify-center items-center flex-col rounded-xl p-4 gap-5 cursor-pointer duration-200 dark:hover:bg-zinc-700 dark:active:bg-zinc-900 xl:h-[25rem] xl:w-[25rem] 2xl:h-[40rem] 2xl:w-[30rem] 2xl:gap-10 lg:w-[20rem] lg:h-[25rem] md:h-[20rem] md:w-[20rem] sm:w-[25rem] sm:p-16"} onClick={onClick}>
       <Image src={img} alt={alt} className="xl:w-[8rem] 2xl:w-[8rem] lg:w-[6rem] md:w-[4rem] sm:w-[8rem]" />
