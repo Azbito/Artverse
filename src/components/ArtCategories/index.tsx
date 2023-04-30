@@ -7,7 +7,7 @@ export default function ArtCategories() {
 
   return (
     <div className="flex justify-center items-center flex-col mt-24">
-      <h1 className={isLight ? "font-poppins font-bold text-lg text-blue-500" : "font-poppins font-bold text-lg text-white xl:text-[3rem] 2xl:text-[4rem]"}>Types of art</h1>
+      <h1 className={isLight ? "font-poppins font-bold text-lg text-blue-500" : "font-poppins font-bold text-lg text-white"}>Types of art</h1>
       <div className="grid grid-cols-4 gap-16 mt-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
         {arts.map((item) => (
           <div key={item.id} onClick={() => alert("This project was made to understand local storage. There's no more pages.")}>
